@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Resume Builder",
+    "description": "Create simple and professional resumes بسهولة.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["10+ templates", "Basic editing", "Export to PDF"],
+    "icon": "https://i.ibb.co.com/RGFLzY2G/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with premium templates.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "Cover letter builder"],
+    "icon": "https://i.ibb.co.com/yFPc1C3h/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Starter Pack",
+    "description": "Perfect for fresh graduates starting their career.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Resume builder", "Interview tips", "Job tracker"],
+    "icon": "https://i.ibb.co.com/R4SW5fnJ/social-media.png"
+  },
+  {
+    "id": 4,
+    "name": "Job Tracker Pro",
+    "description": "Track all your job applications in one place.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited tracking", "Status updates", "Email reminders"],
+    "icon": "https://i.ibb.co.com/nqQxL4zy/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Portfolio Builder",
+    "description": "Create stunning developer portfolios بسهولة.",
+    "price": 79,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Custom domains", "Responsive templates", "SEO optimization"],
+    "icon": "https://i.ibb.co.com/HfCsfmW9/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Interview Prep Kit",
+    "description": "Prepare for interviews with real questions.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["100+ questions", "Mock interviews", "Answer guides"],
+    "icon": "https://i.ibb.co.com/RGFLzY2G/writing-2327400-1.png"
+  },
+  {
+    "id": 7,
+    "name": "LinkedIn Optimizer",
+    "description": "Boost your LinkedIn profile visibility.",
+    "price": 35,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Profile review", "Keyword optimization", "Headline suggestions"],
+    "icon": "https://i.ibb.co.com/R4SW5fnJ/social-media.png"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate Career Bundle",
+    "description": "All-in-one package for job seekers.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["All tools included", "Priority support", "Lifetime updates"],
+    "icon": "https://i.ibb.co.com/tM98415K/Group.png"
+  },
+  {
+  "id": 9,
+  "name": "Freelancer Starter Kit",
+  "description": "Everything you need to start your freelancing journey.",
+  "price": 39,
+  "period": "one-time",
+  "tag": "new",
+  "tagType": "new",
+  "features": [
+    "Proposal templates",
+    "Client communication scripts",
+    "Portfolio tips",
+    "Pricing strategies"
+  ],
+  "icon": "https://i.ibb.co.com/yFPc1C3h/design-tool.png"
+  }
+]
