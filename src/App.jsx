@@ -5,6 +5,7 @@ import DigitalTools from './Components/DigitalTools/DigitalTools'
 import Navbar from './Components/Navbar/Navbar'
 import GetStarted from './Components/GetStarted/GetStarted'
 import { ToastContainer } from 'react-toastify'
+import Pricing from './Components/Pricing/Pricing'
 
 const fetchData = async() => {
   const res = await fetch('/pricingData.json')
@@ -29,7 +30,7 @@ function App() {
     </Suspense>
    </main>
     <GetStarted></GetStarted>
-
+    <Pricing></Pricing>
 
 
 

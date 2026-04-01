@@ -12,7 +12,7 @@ const GetStarted = () => {
         Start using premium digital tools in minutes, not hours.
       </p>
       {/* //////////////////// */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto">
        
         <div className="card bg-base-100 shadow-sm pb-20 pt-5 px-5 rounded-2xl ">
           <p className="flex justify-center items-center bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-[40px] p-2 rounded-full mb-7 ml-auto text-white">01</p>
