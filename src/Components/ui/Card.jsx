@@ -19,7 +19,7 @@ const Card = ({productPrice,setCartNumber,cartNumber,totalPrice}) => {
 
   return (
     
-      <div className="card bg-base-100 shadow-sm border border-[#F2F2F2]">
+      <div className="card bg-base-100 shadow-sm border border-[#F2F2F2] ">
         <div className="card-body ">      
           <span className={`badge badge-xs badge-warning ml-auto font-medium border-none px-4 py-3 rounded-full ${productPrice.tagType === 'best seller' ? 'bg-[#FEF3C6] text-[#BB4D00]' : productPrice.tagType === 'popular' ? 'bg-[#E1E7FF] text-[#4F39F6]' : 'bg-[#DBFCE7] text-[#0A883E]'  }`}>{productPrice.tagType === 'best seller' ? 'Best Seller' : productPrice.tagType === 'popular' ? 'Popular' : 'New' }</span>
           <img className="w-8" src={productPrice.icon} alt="" />
