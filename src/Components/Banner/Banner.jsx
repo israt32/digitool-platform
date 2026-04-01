@@ -5,7 +5,7 @@ import { CiPlay1 } from "react-icons/ci";
 const Banner = () => {
   return (
    
-      <div className="flex gap-14 justify-around container mx-auto py-20 items-center">
+      <div className="flex gap-14 justify-around container mx-auto pb-20 pt-40 items-center">
         <div >
           <span className="p-4 rounded-full text-[16px] font-medium badge badge-xs badge-warning bg-[#E1E7FF] border-none text-[#9514FA] mb-6">
             <span>
