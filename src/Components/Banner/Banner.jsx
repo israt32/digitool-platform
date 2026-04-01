@@ -6,7 +6,7 @@ const Banner = () => {
   return (
    
       <div className="flex gap-14 justify-around container mx-auto py-20 items-center">
-        <div className="w-3/5">
+        <div >
           <span className="p-4 rounded-full text-[16px] font-medium badge badge-xs badge-warning bg-[#E1E7FF] border-none text-[#9514FA] mb-6">
             <span>
               <img src={circleImg} alt="" />
@@ -31,8 +31,8 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div className="w-2/5">
-          <img className="w-full" src={bannerImg} alt="" />
+        <div >
+          <img src={bannerImg} alt="" />
 
         </div>
         
