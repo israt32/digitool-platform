@@ -3,7 +3,7 @@ import digiToolLogo from "../../assets/products/DigiTools.png";
 const Navbar = ({cartNumber}) => {
  
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50">
       <div className="container mx-auto flex items-center">
         <div className="navbar-start">
           <div className="dropdown">

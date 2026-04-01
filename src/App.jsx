@@ -9,6 +9,7 @@ import Pricing from './Components/Pricing/Pricing'
 import Footer from './Components/Footer/Footer'
 import Banner from './Components/Banner/Banner'
 import Rating from './Components/Rating/Rating'
+import TransformWorkflow from './Components/TransformWorkflow/TransformWorkflow'
 
 const fetchData = async() => {
   const res = await fetch('/pricingData.json')
@@ -36,6 +37,7 @@ function App() {
    </main>
     <GetStarted></GetStarted>
     <Pricing></Pricing>
+    <TransformWorkflow></TransformWorkflow>
     <Footer></Footer>
 
 
