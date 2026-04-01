@@ -7,6 +7,7 @@ import GetStarted from './Components/GetStarted/GetStarted'
 import { ToastContainer } from 'react-toastify'
 import Pricing from './Components/Pricing/Pricing'
 import Footer from './Components/Footer/Footer'
+import Banner from './Components/Banner/Banner'
 
 const fetchData = async() => {
   const res = await fetch('/pricingData.json')
@@ -26,6 +27,7 @@ function App() {
     <Navbar cartNumber={cartNumber}></Navbar>
    </header>
    <main className='container mx-auto'>
+   <Banner></Banner>
     <Suspense fallback={<span className="$$loading $$loading-spinner $$loading-xl"></span>}>
     <DigitalTools promisePricing={promisePricing} setCartNumber={setCartNumber} cartNumber={cartNumber}></DigitalTools>
     </Suspense>
