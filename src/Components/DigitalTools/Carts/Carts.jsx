@@ -1,22 +1,25 @@
 import React, { useState } from "react";
 
-const Carts = ({ cartNumber, total }) => {
+const Carts = ({ cartNumber, total ,setCartNumber,setTotal}) => {
   // console.log(cartNumber);  // we have to work with this
 
-  const [deleteArr, setDeleteArr] = useState(cartNumber)
-   const deleteFunction =()=>{
-
-         if(cartNumber.length > 0){
-        
-          console.log('clicked')
-         
-          setDeleteArr([])
-         }
+//  const [deleteArr, setDeleteArr] = useState(cartNumber)
+   const checkoutFunction =(cartNumber)=>{
    
-    
+    if(cartNumber.length > 0){
 
+      setCartNumber([])
+      setTotal(0)
+    }
 
-   }
+  }
+
+  const removeFunction =(cart)=>{
+   const removedCart = cartNumber.filter(singleCart => singleCart.name !== cart.name);
+   setCartNumber(removedCart)
+   setTotal(total - cart.price)
+  }
+  
 
   return (
     <div>
@@ -31,15 +34,16 @@ const Carts = ({ cartNumber, total }) => {
                 <p>{cart.price}</p>
               </div>
             </div>
-            <button className="btn">Remove</button>
+            <button onClick={()=> removeFunction(cart)} className="btn">Remove</button>
           </div>
-          <div className="flex justify-between items-center">
+         
+        </div>
+      ))}
+       <div className="flex justify-between items-center">
             <p>Total</p>
             <p>{total}</p>
           </div>
-          <button onClick={deleteFunction} className="btn">Proceed to Checkout</button>
-        </div>
-      ))}
+          <button onClick={()=>checkoutFunction(cartNumber)} className="btn">Proceed to Checkout</button>
     </div>
   );
 };

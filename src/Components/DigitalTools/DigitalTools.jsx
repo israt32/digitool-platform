@@ -8,12 +8,13 @@ const DigitalTools = ({promisePricing, setCartNumber,cartNumber}) => {
   const [selected, setSelected] = useState('products')
    
   const [total, setTotal] = useState(0)
+
   const totalPrice = (newUpdatedCart) => {
     // console.log(newUpdatedCart, 'eita ki kaj kore?')
     const totalPrice = newUpdatedCart.reduce((total, item) => total + item.price, 0)
     setTotal(totalPrice)
-
    
+
   }
   
 
@@ -27,7 +28,7 @@ const DigitalTools = ({promisePricing, setCartNumber,cartNumber}) => {
 
         <button onClick={()=>setSelected('cart')} className={`px-4 py-3.5 w-[120px] rounded-full font-bold text-[16px]  ${selected === 'cart' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'text-[#25065D]'}`}>Cart ({cartNumber.length})</button>
       </div>
-    {selected === 'products' ? <Products totalPrice={totalPrice} pricingDatas={pricingDatas} cartNumber={cartNumber} setCartNumber={setCartNumber}></Products> : <Carts total={total} cartNumber={cartNumber}></Carts>}
+{selected === 'products' ? <Products totalPrice={totalPrice} pricingDatas={pricingDatas} cartNumber={cartNumber} setCartNumber={setCartNumber}></Products> : <Carts total={total} setTotal={setTotal} cartNumber={cartNumber} setCartNumber={setCartNumber}></Carts>}
       
     </div>
   );
