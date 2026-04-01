@@ -1,14 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const Card = ({productPrice,setCartNumber,cartNumber,totalPrice}) => {
   
-  
+  const [isAdded , setIsAdded] = useState(false)
+
   const handleCart = ()=>{
     
     // console.log(cartNumber, productPrice)
-
+     toast.success('Added to the cart')
     const newUpdatedCart = [...cartNumber, productPrice]
     setCartNumber(newUpdatedCart)
+    setIsAdded(true)
+
     totalPrice(newUpdatedCart)
     
   }
@@ -46,7 +50,7 @@ const Card = ({productPrice,setCartNumber,cartNumber,totalPrice}) => {
 
           </ul>
           <div className="mt-6">
-            <button onClick={handleCart} className="btn text-white bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-full">Buy Now</button>
+            <button onClick={handleCart} className={`btn text-white  btn-block rounded-full ${isAdded ? 'bg-green-600' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]' }`}>{ isAdded ?  'Added to cart' : 'Buy Now'}</button>
           </div>
         </div>
       </div>

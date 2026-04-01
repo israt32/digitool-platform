@@ -1,5 +1,5 @@
 import React from "react";
-import digiToolLogo from "../../assets/DigiTools.png";
+import digiToolLogo from "../../assets/products/DigiTools.png";
 const Navbar = ({cartNumber}) => {
  
   return (
