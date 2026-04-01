@@ -3,6 +3,7 @@ import { Suspense, useState } from 'react'
 import './App.css'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
 import Navbar from './Components/Navbar/Navbar'
+import GetStarted from './Components/GetStarted/GetStarted'
 
 const fetchData = async() => {
   const res = await fetch('/pricingData.json')
@@ -25,6 +26,7 @@ function App() {
     <Suspense fallback={<span className="$$loading $$loading-spinner $$loading-xl"></span>}>
     <DigitalTools promisePricing={promisePricing} setCartNumber={setCartNumber} cartNumber={cartNumber}></DigitalTools>
     </Suspense>
+    <GetStarted></GetStarted>
    </main>
     </>
   )

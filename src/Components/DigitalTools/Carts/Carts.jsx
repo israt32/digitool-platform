@@ -22,28 +22,30 @@ const Carts = ({ cartNumber, total ,setCartNumber,setTotal}) => {
   
 
   return (
-    <div>
-      Your Cart
+    <div className="border-2 border-[#F2F2F2] rounded-2xl p-10">
+      <h1 className="text-[#101727] font-bold text-2xl mb-6">Your Cart</h1>
       {cartNumber.map((cart) => (
-        <div>
+        <div className="bg-[#F9FAFC] p-5 mb-4 rounded-2xl">
           <div className="flex justify-between items-center">
-            <div className="flex gap-3 items-center">
-              <img src={cart.icon} alt="" />
+            <div className="flex gap-3 items-center"> 
+              <div className="bg-white p-3 rounded-full">
+              <img src={cart.icon} alt="" />              
+                </div>           
               <div>
-                <h2>{cart.name}</h2>
-                <p>{cart.price}</p>
+                <h2 className="font-semibold text-[20px]">{cart.name}</h2>
+                <p className="text-[#627382] font-medium text-[16px]">${cart.price}</p>
               </div>
             </div>
-            <button onClick={()=> removeFunction(cart)} className="btn">Remove</button>
+            <button onClick={()=> removeFunction(cart)} className="btn text-[#FF3980] font-bold text-[16px]">Remove</button>
           </div>
          
         </div>
       ))}
-       <div className="flex justify-between items-center">
-            <p>Total</p>
-            <p>{total}</p>
+       <div className="flex justify-between items-center mb-6">
+            <p className="text-[#627382] text-[16px]">Total</p>
+            <p className="font-bold text-[#101727] text-2xl">${total}</p>
           </div>
-          <button onClick={()=>checkoutFunction(cartNumber)} className="btn">Proceed to Checkout</button>
+          <button onClick={()=>checkoutFunction(cartNumber)} className="btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full py-6 font-bold text-[16px] text-white">Proceed to Checkout</button>
     </div>
   );
 };

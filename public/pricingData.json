@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Basic Resume Builder",
-    "description": "Create simple and professional resumes بسهولة.",
+    "description": "Create clean, professional resumes quickly with easy-to-use tools. Perfect for beginners who need a simple and effective CV.",
     "price": 15,
     "period": "one-time",
     "tag": "new",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "name": "Pro Resume Builder",
-    "description": "Advanced resume builder with premium templates.",
+    "description": "Build powerful resumes with advanced features and premium templates. Optimized to pass ATS and impress recruiters.",
     "price": 29,
     "period": "monthly",
     "tag": "popular",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "name": "Career Starter Pack",
-    "description": "Perfect for fresh graduates starting their career.",
+    "description": "Kickstart your career with essential tools and guidance. Ideal for fresh graduates entering the job market.",
     "price": 49,
     "period": "one-time",
     "tag": "best seller",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "name": "Job Tracker Pro",
-    "description": "Track all your job applications in one place.",
+    "description": "Stay organized by tracking all your job applications in one place. Never miss updates or follow-ups again.",
     "price": 19,
     "period": "monthly",
     "tag": "popular",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "name": "Portfolio Builder",
-    "description": "Create stunning developer portfolios بسهولة.",
+    "description": "Design stunning and responsive portfolios to showcase your work. Perfect for developers and creatives.",
     "price": 79,
     "period": "yearly",
     "tag": "new",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "name": "Interview Prep Kit",
-    "description": "Prepare for interviews with real questions.",
+    "description": "Get ready for interviews with real questions and expert answers. Boost your confidence and performance.",
     "price": 25,
     "period": "one-time",
     "tag": "best seller",
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "name": "LinkedIn Optimizer",
-    "description": "Boost your LinkedIn profile visibility.",
+    "description": "Enhance your LinkedIn profile to attract recruiters and opportunities. Improve visibility with smart optimization.",
     "price": 35,
     "period": "monthly",
     "tag": "popular",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "name": "Ultimate Career Bundle",
-    "description": "All-in-one package for job seekers.",
+    "description": "Access all career tools in one powerful package. Everything you need to succeed in your job search.",
     "price": 99,
     "period": "yearly",
     "tag": "best seller",
@@ -88,19 +88,19 @@
     "icon": "https://i.ibb.co.com/tM98415K/Group.png"
   },
   {
-  "id": 9,
-  "name": "Freelancer Starter Kit",
-  "description": "Everything you need to start your freelancing journey.",
-  "price": 39,
-  "period": "one-time",
-  "tag": "new",
-  "tagType": "new",
-  "features": [
-    "Proposal templates",
-    "Client communication scripts",
-    "Portfolio tips",
-    "Pricing strategies"
-  ],
-  "icon": "https://i.ibb.co.com/yFPc1C3h/design-tool.png"
+    "id": 9,
+    "name": "Freelancer Starter Kit",
+    "description": "Start your freelancing journey with ready-to-use resources and templates. Learn how to attract and manage clients effectively.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Proposal templates",
+      "Client communication scripts",
+      "Portfolio tips",
+      "Pricing strategies"
+    ],
+    "icon": "https://i.ibb.co.com/yFPc1C3h/design-tool.png"
   }
 ]

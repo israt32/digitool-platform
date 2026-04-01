@@ -15,13 +15,13 @@ const Card = ({productPrice,setCartNumber,cartNumber,totalPrice}) => {
 
   return (
     
-      <div className="card bg-base-100 shadow-sm">
+      <div className="card bg-base-100 shadow-sm border border-[#F2F2F2]">
         <div className="card-body ">      
-          <span className="badge badge-xs badge-warning ml-auto font-medium">Most Popular</span>
+          <span className={`badge badge-xs badge-warning ml-auto font-medium border-none px-4 py-3 rounded-full ${productPrice.tagType === 'best seller' ? 'bg-[#FEF3C6] text-[#BB4D00]' : productPrice.tagType === 'popular' ? 'bg-[#E1E7FF] text-[#4F39F6]' : 'bg-[#DBFCE7] text-[#0A883E]'  }`}>{productPrice.tagType === 'best seller' ? 'Best Seller' : productPrice.tagType === 'popular' ? 'Popular' : 'New' }</span>
           <img className="w-8" src={productPrice.icon} alt="" />
             <h2 className="text-3xl font-bold">{productPrice.name}</h2>
-          <p>description</p>
-          <span className="text-xl">$29/mo</span>
+          <p className='text-[#627382] text-[16px]'>{productPrice.description}</p>
+          <p className=" font-bold text-2xl">${productPrice.price}<span className='text-[#627382] text-[16px]'>/{productPrice.period}</span></p>
           <ul className="mt-6 flex flex-col gap-2 text-xs">
 
            {
@@ -40,7 +40,7 @@ const Card = ({productPrice,setCartNumber,cartNumber,totalPrice}) => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              <span>{feature}</span>
+              <span className='font-medium text-[16px] text-[#627382]'>{feature}</span>
             </li>)
            }     
 
