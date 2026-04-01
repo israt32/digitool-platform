@@ -2,9 +2,9 @@ import React from 'react';
 
 const TransformWorkflow = () => {
   return (
-    <div className=' bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-32 '>
+    <div className=' bg-linear-to-r from-[#4F39F6] to-[#9514FA] md:py-20 lg:py-32 py-10 px-5 '>
       <div className='text-white container mx-auto text-center'>
-        <h1 className='font-extrabold text-[40px] mb-4'>Ready to Transform Your Workflow?</h1>
+        <h1 className='font-extrabold text-3xl md:text-[40px] mb-4'>Ready to Transform Your Workflow?</h1>
         <p className='text[16px] opacity-90 mb-10'>Join thousands of professionals who are already using Digitools to work smarter. <br /> Start your free trial today.</p>
         <div>
           <button className='btn mr-4 font-semibold text-[#9514FA] bg-white rounded-full'>Explore Products</button>

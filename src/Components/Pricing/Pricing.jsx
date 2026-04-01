@@ -2,8 +2,8 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div className=" container mx-auto py-32">
-      <h1 className="text-[#101727] font-extrabold text-5xl mb-4 text-center">
+    <div className=" container mx-auto md:py-20 lg:py-32 py-10 px-5">
+      <h1 className="text-[#101727] font-extrabold text-3xl md:text-5xl mb-4 text-center">
         Simple, Transparent Pricing
       </h1>
       <p className="text-[16px] text-[#627382] mb-10 text-center">

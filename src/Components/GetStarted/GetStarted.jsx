@@ -4,8 +4,8 @@ import boxImg from '../../assets/products/package.png'
 import rocketImg from '../../assets/products/rocket.png'
 const GetStarted = () => {
   return (
-    <div className=" bg-[#F9FAFC] py-28">
-      <h1 className="text-[#101727] font-extrabold text-5xl text-center mb-4">
+    <div className=" bg-[#F9FAFC] md:py-20 lg:py-28 py-10 px-5">
+      <h1 className="text-[#101727] font-extrabold text-3xl md:text-5xl text-center mb-4">
         Get Started in 3 Steps
       </h1>
       <p className="text-[#627382] text-[16px] text-center mb-10">

@@ -4,7 +4,7 @@ import cartImgNavbar from '../../assets/products/shopping-cart.png'
 const Navbar = ({cartNumber}) => {
  
   return (
-    <div className="navbar bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50 py-3">
+    <div className="navbar bg-base-100 shadow-sm fixed top-0 left-0 right-0 z-50 py-3 pr-6">
       <div className="container mx-auto flex items-center">
         <div className="navbar-start">
           <div className="dropdown">
@@ -30,21 +30,19 @@ const Navbar = ({cartNumber}) => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Products</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a>Features</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Pricing</a>
+              </li>
+              <li>
+                <a>Testimonials</a>
+              </li>
+              <li>
+                <a>FAQ</a>
               </li>
             </ul>
           </div>
@@ -77,7 +75,7 @@ const Navbar = ({cartNumber}) => {
             <p className="absolute -top-1 -right-1 md:-top-2 md:-right-2 bg-red-600 text-white text-xs md:text-sm font-bold rounded-full w-4 h-4 md:w-5 md:h-5 flex items-center justify-center ">{cartNumber.length}</p>
             </span>
           <a className="text-[#101727] opacity-90 font-semibold text-[16px]" href="">Login</a>
-          <a className="btn font-semibold text-[16px] text-white  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full">Get Started</a>
+          <a className="btn font-semibold text-[16px] text-white  bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full hidden md:inline-flex ">Get Started</a>
 
         </div>
       </div>

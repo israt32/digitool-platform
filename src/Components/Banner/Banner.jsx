@@ -5,7 +5,7 @@ import { CiPlay1 } from "react-icons/ci";
 const Banner = () => {
   return (
    
-      <div className="flex gap-14 justify-around container mx-auto pb-20 pt-40 items-center">
+      <div className="flex flex-col md:flex-row gap-14 justify-around container mx-auto md:pb-20 md:pt-32 lg:pt-40 items-center pt-20 px-5">
         <div >
           <span className="p-4 rounded-full text-[16px] font-medium badge badge-xs badge-warning bg-[#E1E7FF] border-none text-[#9514FA] mb-6">
             <span>
@@ -13,11 +13,11 @@ const Banner = () => {
             </span>
             New: AI-Powered Tools Available
           </span>
-          <h1 className="font-extrabold text-7xl opacity-90 leading-21 mb-4">
+          <h1 className="font-extrabold text-3xl md:text-5xl lg:text-7xl opacity-90 lg:leading-21 mb-4">
             Supercharge Your <br />
             Digital Workflow
           </h1>
-          <p className="text-[#627382] text-[18px] mb-8">
+          <p className="text-[#627382] text-[16px] md:text-[18px] mb-8">
             Access premium AI tools, design assets, templates, and productivity <br />
             software—all in one place. Start creating faster today. Explore
             Products
@@ -31,7 +31,7 @@ const Banner = () => {
             </button>
           </div>
         </div>
-        <div >
+        <div className="pb-5">
           <img src={bannerImg} alt="" />
 
         </div>
